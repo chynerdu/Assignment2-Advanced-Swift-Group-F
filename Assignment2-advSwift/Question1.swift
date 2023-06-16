@@ -56,3 +56,13 @@ func allCap(string: String) -> String {
     let uppercaseString = string.uppercased()
     return uppercaseString
 }
+//FUNCTION 3:
+//create a function that will return the middle element of an array
+func middle(array: [Int]) -> Int? {
+    let count = array.count
+    if count % 2 == 0 {
+        return nil
+    }
+    let middleIndex = count / 2
+    return array[middleIndex]
+}

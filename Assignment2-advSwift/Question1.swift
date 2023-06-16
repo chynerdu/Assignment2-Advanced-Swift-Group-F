@@ -50,4 +50,9 @@ func calculateArea(height: Int, width: Int ) -> Int {
     let area = height * width
     return area
 }
-
+//FUNCTION 2:
+//create a function that will convert and print a string into all caps
+func allCap(string: String) -> String {
+    let uppercaseString = string.uppercased()
+    return uppercaseString
+}

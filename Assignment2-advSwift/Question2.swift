@@ -26,3 +26,21 @@ import Foundation
     - 
  
  */
+class Rectangle {
+    var height: Int
+    var width: Int
+    var color: String
+    
+    init(height: Int, width: Int, color: String) {
+        self.height = height
+        self.width = width
+        self.color = color
+    }
+    func getPerimeter() -> Int {
+        return 2 * (height + width)
+    }
+    
+    func printColor() {
+        print(color)
+    }
+}

@@ -71,3 +71,35 @@ class Computer {
         return temp
     }
 }
+
+
+class Laptop : Computer{
+    var isRamUpgradable: Bool
+    var screenSize: Double
+    var isTouchScreen: Bool
+    
+    init(cpu: String, gpu: String, ram: Int, state: String, temp: Double, isRamUpgradable: Bool, screenSize: Double, isTouchScreen: Bool) {
+        super.init(cpu: <#T##String#>, gpu: <#T##String#>, ram: <#T##Int#>, temp: <#T##Double#>)
+        self.cpu = cpu
+        self.gpu = gpu
+        self.ram = ram
+        self.state = state
+        self.temp = temp
+        self.isRamUpgradable = isRamUpgradable
+        self.screenSize = screenSize
+        self.isTouchScreen = isTouchScreen
+    }
+    
+    override func upgradeRam(newAmount: Int) {
+        if (isRamUpgradable == true){
+            self.upgradeRam(newAmount: newAmount)
+        }
+    }
+    
+    func closeScreen(){
+        self.turnOff()
+    }
+    
+}
+
+
